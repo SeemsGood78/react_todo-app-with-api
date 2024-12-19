@@ -27,10 +27,10 @@ export const completeTodo = (id: number, completed: boolean) => {
   return client.patch(baseUrl, { completed });
 };
 
-export const renameTodo = (id: number, title:string) => {
+export const renameTodo = (id: number, title: string) => {
   const baseUrl = `/todos/${id}`;
 
-  return client.patch(baseUrl, {title:title} );
+  return client.patch(baseUrl, { title: title });
 };
 
 // Add more methods here
